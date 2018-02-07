@@ -94,8 +94,8 @@ def compute_cost(A_pred,y,params,lambd=0):
         for i in range(n_W):
             weights_decay+=np.sum(np.square(params["W"+str(i+1)]))
         regu_L2=(lambd/(2*m))*weights_decay
-    cost = -(1/m)*(np.dot(np.log(A_pred),y.T)+np.dot(np.log(1-A_pred),(1-y).T))+regu_L2
-    cost = np.squeeze(cost)   
+    cost = -(1/m)*(np.dot(np.log(A_pred),y.T)+np.dot(np.log(1-A_pred),(1-y).T))+regu_L2 
+    cost=np.squeeze(cost)
     return cost
 
 #Backward Step

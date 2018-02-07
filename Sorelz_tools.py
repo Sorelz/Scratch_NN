@@ -20,6 +20,9 @@ def standardize_fit_transform(dataset):
 
 def standardize_transform(dataset,f_mean,f_std):
     return np.divide(dataset-f_mean,f_std)
+
+def accuracy(y_pred,y_test):
+    return(np.sum(y_pred==y_test)/y_test.shape[1])
             
             
             
