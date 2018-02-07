@@ -4,5 +4,5 @@ Implementing from scratch Neural Network with Dropout and L2 regularization opti
 Proposed a simple study case on breast cancer dataset. All functions used are coded from scratch.
 
 Further improvements:
--Automatic Hyperparameters tuning
--Comparison with other algorithms and deep frameworks
+- Automatic Hyperparameters tuning
+- Comparison with other algorithms and deep frameworks
